@@ -1,0 +1,77 @@
+
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%%%%%%%
+% \usepackage{layout}
+% \usepackage{lipsum}
+%%%%%%%
+\usetheme[% Complete settings. Default value in []
+% titleimagecolor=red,       % [gray], darkgray, red, blue, green
+% titleimagemargin=2mm,      % Distance [2mm]    Frame around title page image
+% navigationsymbols=false,   % true   / [false]  Navigation symbols in the foot
+% mathseriffont=false,       % true   / [false]  Serif / non-serif math fonts
+% foot=true,                 % [true] / false    Footline or not
+% nofootslidenum=false       % true   / [false]  Keep slide num even when foot=false
+% footlogo=true,             % [true] / false    Put LU logo to the left of footer
+% english=true,              % [true] / false    English / Swedish logo
+% LTHlogo=false,             % true   / [false]  Use LTH logo instead of LU on title and end pages.
+% blackenumeratenumber=true, % [true] / false    Black enumerate numbers, o.w. Lund bronze
+% blackitemmark=false,       % true   / [false]  Black item marks, o.w. Lund bronze
+% defaultfont=false,         % true   / [false]  Falls back to default beamer fonts
+% sectionframe=true,
+]{ulund}
+%%%%%%%%%%%%%%%%%%%%% Layout commands 
+%%%% Foot
+% \ulundfootleft{\insertshortauthor}
+% \ulundfootmid{\insertshorttitle}
+% \ulundfootright{\insertframenumber}% {\insertframenumber:\inserttotalframenumber}
+%%%% Titleimage
+\titleimage{Pictures/ULUNDcolor} % Replaces the LU image. Voids option titleimagecolor
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[B. Regnell, \today]{\selectfont Workshop om digitalisering \\ Näringslivsrådet LTH }
+\author[\href{https://github.com/bjornregnell/ws-dig}{github.com/bjornregnell/ws-dig}]{%
+  Prof. Björn Regnell\newline
+  Vicerektor för digitalisering, LTH}
+%%%%%%%%%%%%%%%%%%%%%
+\usepackage{verbatim}
+%%%%%%%%%%%%% Verbatim code box
+\usepackage[skins,listings]{tcolorbox}
+\tcbuselibrary{listingsutf8}
+
+\usepackage{pgf-pie}
+
+\newcommand{\TitleSlide}{\begin{frame}[plain]\titlepage\end{frame}}
+
+\newcommand{\EndSlide}{\begin{frame}[plain]\endpage\end{frame}}
+
+
+\newcommand{\Section}[1]{\titleimagecolor{red}\section{#1}}
+
+\newcommand{\code}{\lstinline[basicstyle=\ttfamily]}
+
+\newenvironment{Slide}[1]%
+  {\begin{frame}[environment=Slide]{#1}}
+  {\end{frame}}%
+
+% \newenvironment{Slide}[2][]  /// AAARGH strange error???
+%   {\begin{frame}[fragile,environment=Slide,#1]{#2}}
+%   {\end{frame}}
+
+
+
+\begin{document}
+
+\TitleSlide
+
+%%%%%%%%%%%%%%%
+
+\begin{Slide}{Agenda: workshop om digitalisering}
+\begin{itemize}
+    \item
+\end{itemize}
+\end{Slide}
+
+
+
+\end{document}
