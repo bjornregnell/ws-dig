@@ -3,8 +3,8 @@ Discussion material for conducting strategy workshops on digitalization in highe
 
 ## Download
 
-* [Slides Workshop 2019-09-13](https://github.com/bjornregnell/ws-dig/releases) (in Swedish)
+* Slides are released [here](https://github.com/bjornregnell/ws-dig/releases)
 
 ## Build
 
-Run `pdflatex main.tex`.
+Run `pdflatex main.tex`
