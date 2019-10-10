@@ -1,4 +1,6 @@
-**/*.pdf
+**/20190913.pdf
+**/20191011.pdf
+
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
